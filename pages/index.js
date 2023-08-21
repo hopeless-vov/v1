@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import { Blinker } from 'next/font/google';
 
 const blinker = Blinker({
   weight: '300',
-  subsets: ['latin']
+  subsets: ['latin'],
 });
 
 export default function Home() {
