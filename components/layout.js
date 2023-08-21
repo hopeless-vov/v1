@@ -5,7 +5,9 @@ export default function Layout({ children }) {
   return (
     <div>
       <Shining />
-      {children}
+      <div className='w-full py-12 px-6 mx-auto my-0 lg:max-w-7xl lg:px-24 lg:py-0 md:py-20 md:px-12'>
+        {children}
+      </div>
     </div>
   );
 }
