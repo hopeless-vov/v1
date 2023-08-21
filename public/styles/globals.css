@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply bg-blueGray-900
+  }
+  
+  body {
+    font-size: 16px;
+    @apply text-blueGray-400 text-base
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-white-500 sm:text-5xl;
+  }
+
+  h2 {
+    @apply text-lg font-medium text-white-500 sm:text-xl;
+  }
+}

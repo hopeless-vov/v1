@@ -1,4 +1,4 @@
-import '@/styles/globals.css';
+import 'public/styles/globals.css';
 import PropTypes from 'prop-types';
 
 export default function App({ Component, pageProps }) {
