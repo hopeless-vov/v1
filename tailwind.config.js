@@ -13,6 +13,7 @@ module.exports = {
         },
         blueGray: {
           400: '#94a3b8',
+          500: '#64748b',
           900: '#0f172a',
         },
         teal: {

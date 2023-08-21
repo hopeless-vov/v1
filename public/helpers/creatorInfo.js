@@ -3,5 +3,6 @@ module.exports = {
   name: 'Volodymyr Bondarenko',
   position: 'Software Engineer',
   currentCompany: 'Worth Systems',
-  motto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+  motto:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
 };
