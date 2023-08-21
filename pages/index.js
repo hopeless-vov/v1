@@ -6,11 +6,5 @@ const blinker = Blinker({
 });
 
 export default function Home() {
-  return (
-    <main
-      className={`${blinker.className}`}
-    >
-      home
-    </main>
-  );
+  return <main className={`${blinker.className}`}>home</main>;
 }
