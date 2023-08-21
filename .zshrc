@@ -1,0 +1,1 @@
+alias lintprettierfix='npx eslint --fix . && npx prettier --write .'
