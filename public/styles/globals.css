@@ -9,7 +9,7 @@
 
   body {
     font-size: 16px;
-    @apply text-blueGray-400 text-base;
+    @apply text-blueGray-400 text-base font-light;
   }
 
   h1 {
@@ -17,6 +17,6 @@
   }
 
   h2 {
-    @apply text-lg font-medium text-white-500 sm:text-xl;
+    @apply text-lg font-normal text-white-500 sm:text-xl;
   }
 }
