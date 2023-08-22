@@ -1,9 +1,10 @@
-import { creatorInfo, navigation } from '@/public/helpers';
-import { Navigation } from "@/components" 
+import { creatorInfo, navigation, social } from '@/public/helpers';
+import { Navigation, Social } from '@/components';
 
 export default function Header() {
   const { name, position, currentCompany, motto } = creatorInfo;
-  const { navLinks } = navigation
+  const { navLinks } = navigation;
+  const { socialMedia } = social;
   return (
     <header className='lg:w-6/12 lg:py-24 lg:max-h-screen flex flex-col justify-between lg:sticky top-0'>
       <div>
@@ -16,7 +17,7 @@ export default function Header() {
         <p className='mt-4 max-w-sm'>{motto}</p>
         <Navigation navigationList={navLinks} />
       </div>
-      <div>social</div>
+      <Social socialList={socialMedia} />
     </header>
   );
 }
