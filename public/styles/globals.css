@@ -21,6 +21,6 @@
   }
 
   section {
-    @apply mb-16 h-96 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24
+    @apply mb-16 h-96 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24;
   }
 }
