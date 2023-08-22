@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function NavigationItem({ nav }) {
-  const {name, url} = nav
+  const { name, url } = nav;
   return (
     <a
       href={url}

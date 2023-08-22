@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    @apply bg-blueGray-900;
+    @apply bg-blueGray-900 scroll-smooth;
   }
 
   body {
@@ -18,5 +18,9 @@
 
   h2 {
     @apply text-lg font-normal text-white-500 sm:text-xl;
+  }
+
+  section {
+    @apply mb-16 h-96 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24
   }
 }

@@ -1,5 +1,5 @@
+import NavigationList from './navigationItem';
 import PropTypes from 'prop-types';
-import NavigationList from './navigationItem'
 
 export default function Navigation({ navigationList }) {
   return (
@@ -8,7 +8,7 @@ export default function Navigation({ navigationList }) {
         {navigationList &&
           navigationList.map((nav, index) => (
             <li key={index} className='flex'>
-              <NavigationList nav={nav}/>
+              <NavigationList nav={nav} />
             </li>
           ))}
       </ul>
