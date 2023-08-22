@@ -23,4 +23,12 @@
   section {
     @apply mb-16 h-96 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24;
   }
+
+  .navigation-active .nav-indicator {
+    @apply w-16 bg-white-500 transition-all
+  }
+  .navigation-active .nav-text {
+    @apply text-white-500
+  }
+
 }

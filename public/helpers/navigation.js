@@ -1,16 +1,3 @@
 module.exports = {
-  navLinks: [
-    {
-      name: 'About',
-      url: '/#about',
-    },
-    {
-      name: 'Experience',
-      url: '/#experience',
-    },
-    {
-      name: 'Projects',
-      url: '/#projects',
-    },
-  ],
+  navItems: ['about', 'experience', 'projects'],
 };
