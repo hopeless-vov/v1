@@ -28,7 +28,7 @@ Navigation.propTypes = {
       name: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
       top: PropTypes.number,
-      bottom: PropTypes.number
+      bottom: PropTypes.number,
     }),
   ),
 };

@@ -2,7 +2,8 @@ import { Blinker } from 'next/font/google';
 import { About, Experience, Projects } from '@/components';
 
 const blinker = Blinker({
-  weight: '300',
+  weight: ['100', '200', '300', '400', '600', '700', '800', '900'],
+  style: ['normal'],
   subsets: ['latin'],
 });
 
