@@ -1,4 +1,3 @@
-
 export default function About() {
   const styling = 'mb-4 tracking-widest';
 
