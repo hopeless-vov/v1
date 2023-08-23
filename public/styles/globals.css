@@ -20,6 +20,10 @@
     @apply text-lg font-normal text-white-500 sm:text-xl;
   }
 
+  h3 {
+    @apply text-xl font-normal sm:text-base;
+  }
+
   section {
     @apply mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24;
   }
