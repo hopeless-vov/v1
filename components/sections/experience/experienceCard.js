@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import {Tag} from '@/components'
 export default function Experience({ job }) {
   const { company, position, description, skills, from, to } = job;
   return (
@@ -21,8 +22,13 @@ export default function Experience({ job }) {
             </a>
           </h3>
           <p className='mt-2 text-sm leading-normal'>{description}</p>
-          <ul>
-            {skills}
+          <ul className='mt-2 flex flex-wrap'>
+            {
+              skills.map((skill, index) => 
+              <li key={index} className='mr-1.5 mt-2'>
+                <Tag tag={skill}/>
+              </li>)
+            }
           </ul>
         </div>
       </div>
