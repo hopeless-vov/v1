@@ -9,11 +9,12 @@ export default function Experience() {
       <div>
         <ol className='group/list'>
           {jobs.map(
-            ({ company, position, description, skills, from, to }, index) => (
+            ({ company, position, description, skills, from, to, url }, index) => (
               <Card
                 key={index}
                 content={{
                   title: position + ' - ' + company,
+                  url,
                   description,
                   tags: skills,
                 }}

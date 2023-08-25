@@ -3,7 +3,7 @@ import { Tag } from '@/components';
 import { Icon } from '@/components/icons';
 
 export default function Card({ content, children }) {
-  const { title, description, tags } = content;
+  const { title, description, tags, url } = content;
   return (
     <li className='mb-12'>
       <div className='group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:cursor-pointer lg:group-hover/list:opacity-50'>
@@ -13,7 +13,9 @@ export default function Card({ content, children }) {
         <div className='z-10 sm:col-span-6'>
           <h3 className='font-medium leading-snug'>
             <a
-              href='/'
+              href={url}
+              target='_blank'
+              rel='noreferrer'
               className='inline-flex transition-all text-slate-200  hover:text-teal-300 focus-visible:text-teal-300 text-base items-center'
             >
               <span className='absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block' />
@@ -40,15 +42,16 @@ export default function Card({ content, children }) {
 }
 
 Card.propTypes = {
+  children: PropTypes.node,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
   }),
-  children: PropTypes.node
 };
 
 Card.defaultProps = {
   content: null,
-  children: null
+  children: null,
 };
