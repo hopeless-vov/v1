@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Tag } from '@/components';
 import { Icon } from '@/components/icons';
 
-export default function Card({ content, children }) {
+export default function Card({ content, children, className }) {
   const { title, description, tags, url } = content;
   return (
     <li className='mb-12'>
@@ -10,7 +10,7 @@ export default function Card({ content, children }) {
         <div className='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg' />
 
         {children}
-        <div className='z-10 sm:col-span-6'>
+        <div className={`z-10 sm:col-span-6 ${className}`}>
           <h3 className='font-medium leading-snug'>
             <a
               href={url}
@@ -49,9 +49,11 @@ Card.propTypes = {
     url: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
   }),
+  className: PropTypes.string
 };
 
 Card.defaultProps = {
   content: null,
   children: null,
+  className: ''
 };
