@@ -16,11 +16,11 @@ export default function Card({ content, children }) {
               href={url}
               target='_blank'
               rel='noreferrer'
-              className='inline-flex transition-all text-slate-200  hover:text-teal-300 focus-visible:text-teal-300 text-base items-center'
+              className='inline-flex transition-all text-slate-200  hover:text-teal-300 focus-visible:text-teal-300 text-base items-center group/link'
             >
               <span className='absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block' />
               {title}
-              <span className='transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none ml-2 translate-y-px'>
+              <span className='transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-2 translate-y-px'>
                 <Icon name='Link' />
               </span>
             </a>
