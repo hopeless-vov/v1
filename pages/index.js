@@ -1,5 +1,5 @@
 import { Blinker } from 'next/font/google';
-import { About, Experience, Projects } from '@/components';
+import { About, Experience, Projects, Footer } from '@/components';
 
 const blinker = Blinker({
   weight: ['100', '200', '300', '400', '600', '700', '800', '900'],
@@ -16,6 +16,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <Footer />
     </main>
   );
 }

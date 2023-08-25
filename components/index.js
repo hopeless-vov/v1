@@ -8,3 +8,4 @@ export { default as Experience } from './sections/experience';
 export { default as Projects } from './sections/projects';
 export { default as Tag } from './tag';
 export { default as Card } from './card';
+export { default as Footer } from './footer';

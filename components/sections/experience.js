@@ -6,9 +6,7 @@ export default function Experience() {
   return (
     <section id='experience'>
       <div className='section-heading'>
-        <h2>
-          Expirience
-        </h2>
+        <h2>Expirience</h2>
       </div>
       <div>
         <ol className='group/list'>

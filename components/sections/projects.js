@@ -7,9 +7,7 @@ export default function Projects() {
   return (
     <section id='projects'>
       <div className='section-heading'>
-        <h2>
-          Projects
-        </h2>
+        <h2>Projects</h2>
       </div>
       <div>
         <ol className='group/list'>

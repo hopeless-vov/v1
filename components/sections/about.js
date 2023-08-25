@@ -3,10 +3,8 @@ export default function About() {
 
   return (
     <section id='about'>
-      <div className="section-heading">
-        <h2>
-          About
-        </h2>
+      <div className='section-heading'>
+        <h2>About</h2>
       </div>
       <div>
         <p className={styling}>
