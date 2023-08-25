@@ -43,17 +43,17 @@ export default function Card({ content, children, className }) {
 
 Card.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
   }),
-  className: PropTypes.string
 };
 
 Card.defaultProps = {
   content: null,
   children: null,
-  className: ''
+  className: '',
 };

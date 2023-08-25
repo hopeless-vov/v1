@@ -5,7 +5,11 @@ export default function Experience() {
   const { jobs } = experience;
   return (
     <section id='experience'>
-      {/* <div>Expirience</div> */}
+      <div className='section-heading'>
+        <h2>
+          Expirience
+        </h2>
+      </div>
       <div>
         <ol className='group/list'>
           {jobs.map(

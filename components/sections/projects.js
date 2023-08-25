@@ -1,19 +1,20 @@
+import Image from 'next/image';
 import { Card } from '@/components';
 import { portfolio } from '@/public/helpers';
-import Image from 'next/image'
 
 export default function Projects() {
   const { projects } = portfolio;
   return (
     <section id='projects'>
-      {/* <div>Projects</div> */}
+      <div className='section-heading'>
+        <h2>
+          Projects
+        </h2>
+      </div>
       <div>
         <ol className='group/list'>
           {projects.map(
-            (
-              { title, description, technologies, url, imageName },
-              index,
-            ) => (
+            ({ title, description, technologies, url, imageName }, index) => (
               <Card
                 key={index}
                 content={{
