@@ -10,7 +10,7 @@ export default function NavigationItem({ nav, isActive }) {
       }`}
     >
       <span className='nav-indicator h-[1px] w-8 bg-blueGray-500 mr-4 group-hover:w-16 group-hover:bg-white-500 transition-all' />
-      <span className='nav-text group-hover:text-white-50'>{name}</span>
+      <span className='nav-text group-hover:text-white-500'>{name}</span>
     </a>
   );
 }

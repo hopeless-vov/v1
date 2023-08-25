@@ -9,7 +9,7 @@ export default function Tag({ tag }) {
 }
 
 Tag.propTypes = {
-  tag: PropTypes.string.isRequired
+  tag: PropTypes.string.isRequired,
 };
 
 Tag.defaultProps = {

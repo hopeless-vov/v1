@@ -3,7 +3,6 @@ import { experience } from '@/public/helpers';
 
 export default function Experience() {
   const { jobs } = experience;
-  console.log('jobs', jobs);
   return (
     <section id='experience'>
       {/* <div>Expirience</div> */}
