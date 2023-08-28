@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-export default function NavigationItem({ nav, isActive }) {
-  const { name, url } = nav;
+export default function NavigationItem({ nav }) {
+  const { name, url, isActive } = nav;
   return (
     <a
       href={url}
@@ -16,14 +16,13 @@ export default function NavigationItem({ nav, isActive }) {
 }
 
 NavigationItem.propTypes = {
-  isActive: PropTypes.bool,
   nav: PropTypes.shape({
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    isActive: PropTypes.bool.isRequired
   }),
 };
 
 NavigationItem.defaultProps = {
   nav: null,
-  isActive: false,
 };

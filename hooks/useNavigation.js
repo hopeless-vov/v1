@@ -6,18 +6,27 @@ const useNavigation = () => {
   const { navItems } = navigation;
 
   React.useEffect(() => {
-    const newNavList = navItems.map((item, index) => {
-      const { bottom } = getElementBounding(item);
-      const prevElPos = getElementBounding(navItems[index - 1]) || null;
-      return {
-        name: item,
-        url: '/#' + item,
-        top: index ? prevElPos?.bottom : 0,
-        bottom,
-      };
-    });
-    setNavigationList(newNavList);
+    const handleScroll = () => {
+      const newNavList = navItems.map((item, index) => {
+        const { bottom } = getElementBounding(item);
+        const prevElPos = getElementBounding(navItems[index - 1])?.bottom || 0;
+        return {
+          name: item,
+          url: '/#' + item,
+          isActive: bottom > 0 && prevElPos <= 0
+        };
+      });
+      setNavigationList(newNavList);
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
   return navigationList;
 };
 export default useNavigation;
