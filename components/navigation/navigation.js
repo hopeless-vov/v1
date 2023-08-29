@@ -9,9 +9,7 @@ export default function Navigation() {
         {navigation &&
           navigation.map((nav, index) => (
             <li key={index} className='flex'>
-              <NavigationItem
-                nav={nav}
-              />
+              <NavigationItem nav={nav} />
             </li>
           ))}
       </ul>

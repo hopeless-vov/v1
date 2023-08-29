@@ -13,7 +13,7 @@ const useNavigation = () => {
         return {
           name: item,
           url: '/#' + item,
-          isActive: bottom > 0 && prevElPos <= 0
+          isActive: bottom > 0 && prevElPos <= 0,
         };
       });
       setNavigationList(newNavList);

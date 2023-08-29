@@ -19,7 +19,7 @@ NavigationItem.propTypes = {
   nav: PropTypes.shape({
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-    isActive: PropTypes.bool.isRequired
+    isActive: PropTypes.bool.isRequired,
   }),
 };
 
