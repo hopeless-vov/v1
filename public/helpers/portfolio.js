@@ -1,7 +1,7 @@
 module.exports = {
   projects: [
     {
-      title: 'Aut sunt reprehenderitNon temporibus',
+      project: 'Aut sunt reprehenderitNon temporibus',
       description:
         'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
         'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +
@@ -11,7 +11,7 @@ module.exports = {
       imageName: 'project',
     },
     {
-      title: 'Non Auporibus',
+      project: 'Non Auporibus',
       description:
         'Et aliquid quiaUt voluptate eos laboriosam aperiam' +
         'eos harum maxime est dignissimos corrupti!',
@@ -20,7 +20,7 @@ module.exports = {
       imageName: 'project',
     },
     {
-      title: 'Tekop dignissimos',
+      project: 'Tekop dignissimos',
       description:
         'Aut sueos laboriosam aperiam' +
         'eos harum maxime est dignissimos corrupti!',
@@ -29,7 +29,7 @@ module.exports = {
       imageName: 'project',
     },
     {
-      title: 'KenderitNon temporibus',
+      project: 'KenderitNon temporibus',
       description:
         'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
         'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +

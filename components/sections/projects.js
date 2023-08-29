@@ -12,11 +12,11 @@ export default function Projects() {
       <div>
         <ol className='group/list'>
           {projects.map(
-            ({ title, description, technologies, url, imageName }, index) => (
+            ({ project, description, technologies, url, imageName }, index) => (
               <Card
                 key={index}
                 content={{
-                  title,
+                  title: project,
                   url,
                   description,
                   tags: technologies,
