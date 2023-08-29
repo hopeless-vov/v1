@@ -20,7 +20,7 @@ export default function Card({ content, children, className }) {
             >
               <span className='absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block' />
               {title}
-              <span className='transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 motion-reduce:transition-none ml-2 translate-y-px'>
+              <span className='transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 motion-reduce:transition-none ml-1 translate-y-px rotate-[-45deg]'>
                 <Icon name='Link' />
               </span>
             </a>
