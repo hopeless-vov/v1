@@ -3,7 +3,7 @@ import { Card } from '@/components';
 import { portfolio } from '@/public/helpers';
 
 export default function Projects() {
-  const projects = portfolio.filter(project => project?.publickView);
+  const projects = portfolio.filter((project) => project?.publickView);
   return (
     <section id='projects'>
       <div className='section-heading'>
