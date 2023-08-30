@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Icon } from '@/components/icons';
-import { Table, TableHead, TableRow, TableColumn } from '@/components';
+import { Table, TableHead, TableRow, TableColumn, IconLink } from '@/components';
 import { portfolio } from '@/public/helpers';
 
 const headers = [
@@ -57,7 +57,10 @@ export default function Archive() {
               <TableColumn>{project.project}</TableColumn>
               <TableColumn>{project.madeAt}</TableColumn>
               <TableColumn>React</TableColumn>
-              <TableColumn>{project.url}</TableColumn>
+              <TableColumn>
+                {/* {project.url} */}
+                <IconLink text={project.url}/>
+              </TableColumn>
             </TableRow>
           ))}
         </tbody>
