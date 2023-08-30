@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import { Icon } from '@/components/icons';
-import { Table, TableHead, TableRow, TableColumn, IconLink } from '@/components';
+import {
+  Table,
+  TableHead,
+  TableRow,
+  TableColumn,
+  IconLink,
+  Tag,
+} from '@/components';
 import { portfolio } from '@/public/helpers';
 
 const headers = [
@@ -39,27 +46,44 @@ export default function Archive() {
         Volodymyr Bondarenko
       </Link>
       <h1>All Projects</h1>
-      <Table className='mt-12 w-full border-collapse text-left'>
+      <Table className='mt-12 w-full border-collapse text-left text-sm'>
         <TableHead>
           {headers.map(({ text, styling }, index) => (
             <th
               key={index}
-              className={`py-4 pr-8 text-sm font-semibold text-slate-200 ${styling}`}
+              className={`py-4 pr-8 font-semibold text-slate-200 ${styling}`}
             >
               {text}
             </th>
           ))}
         </TableHead>
         <tbody>
-          {portfolio.map((project, index) => (
+          {portfolio.map(({project, year, madeAt, technologies, url}, index) => (
             <TableRow key={index}>
-              <TableColumn>{project.year}</TableColumn>
-              <TableColumn>{project.project}</TableColumn>
-              <TableColumn>{project.madeAt}</TableColumn>
-              <TableColumn>React</TableColumn>
+              <TableColumn>{year}</TableColumn>
               <TableColumn>
-                {/* {project.url} */}
-                <IconLink text={project.url}/>
+                <div className='text-base text-slate-200 font-semibold'>
+                  <IconLink
+                    className='block sm:hidden'
+                    text={project}
+                  />
+                  <div className='hidden sm:block'>{project}</div>
+                </div>
+              </TableColumn>
+              <TableColumn className='hidden lg:table-cell'>
+                {madeAt}
+              </TableColumn>
+              <TableColumn className='hidden lg:table-cell'>
+                <ul className='flex -translate-y-1.5 flex-wrap'>
+                  {technologies.map((technology, id) => (
+                    <li key={id} className='my-1 mr-1.5'>
+                      <Tag tag={technology} />
+                    </li>
+                  ))}
+                </ul>
+              </TableColumn>
+              <TableColumn className='hidden sm:table-cell'>
+                <IconLink text={url} />
               </TableColumn>
             </TableRow>
           ))}
