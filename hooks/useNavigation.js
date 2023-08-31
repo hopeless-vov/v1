@@ -8,12 +8,12 @@ const useNavigation = () => {
   React.useEffect(() => {
     const handleScroll = () => {
       const newNavList = navItems.map((item, index) => {
-        const { bottom } = getElementBounding(item);
+        const currentElement = getElementBounding(item);
         const prevElPos = getElementBounding(navItems[index - 1])?.bottom || 0;
         return {
           name: item,
           url: '/#' + item,
-          isActive: bottom > 0 && prevElPos <= 0,
+          isActive: currentElement?.bottom > 0 && prevElPos <= 0,
         };
       });
       setNavigationList(newNavList);
