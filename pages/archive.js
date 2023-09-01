@@ -60,34 +60,40 @@ export default function Archive() {
         <tbody>
           {portfolio.map(
             ({ project, year, madeAt, technologies, url }, index) => {
-              const isGitLink = url?.includes('github')
-              return <TableRow key={index}>
-                <TableColumn>{year}</TableColumn>
-                <TableColumn>
-                  <div className='text-base text-slate-200 font-semibold'>
-                    <IconLink className='block sm:hidden' text={project} />
-                    <div className='hidden sm:block'>{project}</div>
-                  </div>
-                </TableColumn>
-                <TableColumn className='hidden lg:table-cell'>
-                  {madeAt}
-                </TableColumn>
-                <TableColumn className='hidden lg:table-cell'>
-                  <ul className='flex -translate-y-1.5 flex-wrap'>
-                    {technologies.map((technology, id) => (
-                      <li key={id} className='my-1 mr-1.5'>
-                        <Tag tag={technology} />
-                      </li>
-                    ))}
-                  </ul>
-                </TableColumn>
-                <TableColumn className='hidden sm:table-cell'>
-                  {
-                    url && <IconLink url={url} text={isGitLink ? 'GitHub' : url} icon={isGitLink ? 'GitHub' : 'Arrow'}/>
-                  }
-                </TableColumn>
-              </TableRow>
-},
+              const isGitLink = url?.includes('github');
+              return (
+                <TableRow key={index}>
+                  <TableColumn>{year}</TableColumn>
+                  <TableColumn>
+                    <div className='text-base text-slate-200 font-semibold'>
+                      <IconLink className='block sm:hidden' text={project} />
+                      <div className='hidden sm:block'>{project}</div>
+                    </div>
+                  </TableColumn>
+                  <TableColumn className='hidden lg:table-cell'>
+                    {madeAt}
+                  </TableColumn>
+                  <TableColumn className='hidden lg:table-cell'>
+                    <ul className='flex -translate-y-1.5 flex-wrap'>
+                      {technologies.map((technology, id) => (
+                        <li key={id} className='my-1 mr-1.5'>
+                          <Tag tag={technology} />
+                        </li>
+                      ))}
+                    </ul>
+                  </TableColumn>
+                  <TableColumn className='hidden sm:table-cell'>
+                    {url && (
+                      <IconLink
+                        url={url}
+                        text={isGitLink ? 'GitHub' : url}
+                        icon={isGitLink ? 'GitHub' : 'Arrow'}
+                      />
+                    )}
+                  </TableColumn>
+                </TableRow>
+              );
+            },
           )}
         </tbody>
       </Table>

@@ -8,16 +8,16 @@ export default function IconLink({ className, text, icon, url }) {
       : 'w-4 ml-1';
   return (
     <a
-    href={url}
-    target='_blank'
-    rel='noreferrer'
-    className={`inline-flex transition-all hover:text-teal-300 focus-visible:text-teal-300 items-center group/link ${className}`}
-  >
-    {text}
-    <span className={arrowStyling}>
-      <Icon name={icon} />
-    </span>
-  </a>
+      href={url}
+      target='_blank'
+      rel='noreferrer'
+      className={`inline-flex transition-all hover:text-teal-300 focus-visible:text-teal-300 items-center group/link ${className}`}
+    >
+      {text}
+      <span className={arrowStyling}>
+        <Icon name={icon} />
+      </span>
+    </a>
   );
 }
 
@@ -32,5 +32,5 @@ IconLink.defaultProps = {
   className: '',
   text: '',
   icon: 'Arrow',
-  url: '/'
+  url: '/',
 };
