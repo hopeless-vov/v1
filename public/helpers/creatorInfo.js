@@ -4,5 +4,5 @@ module.exports = {
   position: 'Software Engineer',
   currentCompany: 'Worth Systems',
   motto:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    'I take all your challenges and turn them into an accessible, simple and creative product.',
 };

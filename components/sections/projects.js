@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card } from '@/components';
 import { portfolio } from '@/public/helpers';
-import Link from 'next/link';
 import { Icon } from '@/components/icons';
 
 export default function Projects() {
@@ -42,13 +42,10 @@ export default function Projects() {
           className='group mb-2 inline-flex items-center font-semibold leading-tight text-slate-200 hover:text-teal-300'
         >
           View Full Project Archive
-
           <span className='ml-1 h-4 w-4 transition-transform group-hover:translate-x-2 flex items-center'>
             <Icon name='Arrow' />
           </span>
-
         </Link>
-
       </div>
     </section>
   );

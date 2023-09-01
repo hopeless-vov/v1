@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import { Card } from '@/components';
 import { experience } from '@/public/helpers';
-import Link from 'next/link';
 import { Icon } from '@/components/icons';
 // import resume from '@/public/CV-Volodymyr.pdf';
 
@@ -32,17 +32,14 @@ export default function Experience() {
           )}
         </ol>
 
-
         <Link
           href='/resume.pdf'
           className='group mb-2 inline-flex items-center font-semibold leading-tight text-slate-200 hover:text-teal-300'
         >
           View Full Resume
-
           <span className='ml-1 h-4 w-4 transition-transform group-hover:translate-x-2 flex items-center'>
             <Icon name='Arrow' />
           </span>
-
         </Link>
       </div>
     </section>

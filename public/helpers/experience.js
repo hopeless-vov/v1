@@ -4,9 +4,10 @@ module.exports = {
       company: 'Worth Internet Systems',
       position: 'Software Engineer',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +
-        'eos harum maxime est dignissimos corrupti!',
+      'Developing high-quality, reliable code for various types of projects for ' +
+      'our clients. Working with a client team to create a wind energy ' +
+      'project and create an app for public events. Active participation in the life ' +
+      'of the company, preparation for meetings, sharing experience with other developers.',
       url: 'https://www.worthsystems.com/',
       skills: [
         'Html',
@@ -18,25 +19,27 @@ module.exports = {
         'Leaflet',
         'EditorX',
       ],
-      range: '2023 - present',
+      range: 'Feb 2023 - present',
     },
     {
       company: 'AND Digital',
       position: 'Product Developer',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis. Et aliquid quiaUt.',
+        ' Delved into the study of the scrum environment, attended courses and trainings, ' +
+        'passed various types of tests. Communicated with developers from other fields, ' +
+        'shared my experience and learned from them.',
       url: 'https://www.and.digital/',
       skills: ['Scrum'],
-      range: '2023 - Feb 2023',
+      range: 'Jan 2023',
     },
     {
       company: 'Frozeneon',
       position: 'Developer',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +
-        'eos harum maxime est dignissimos corrupti!',
+        'Development of cool, optimized and inclusive GameDev products. Close communication ' +
+        'with development teams, designers and the project owner to make big and difficult ' +
+        'decisions. Creating different types of events in our products was not ' +
+        'something new for us. Using only new technologies.',
       url: 'https://frozeneon.com/',
       skills: ['Vue 3', 'Nuxt', 'JavaScript', 'Scss', 'Electron.js'],
       range: '2022 - 2023',
@@ -45,19 +48,19 @@ module.exports = {
       company: 'Logos IT Academy',
       position: 'Mentor',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis.',
+        'Cooperation with students, conducting lectures for students,' +
+        'the purpose of which was to learn how to use the basic skills of ' + 
+        'HTML, CSS, JS technologies. Homework check, help and feedback.',
       url: 'https://lviv.logos-academy.com/',
       skills: ['Htnl', 'Css', 'JavaScript'],
-      range: '2022 - July 2022',
+      range: 'July 2022',
     },
     {
       company: 'QuintaGroup',
       position: 'Developer',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +
-        'eos harum maxime est dignissimos corrupti!',
+        'Worked with a team in a scrum environment to create a robust collaboration platform ' +
+        'that enables projects to be launched in the lighting industry.',
       url: 'https://quintagroup.com/',
       skills: ['Vue', 'JavaScript', 'Scss', 'Tailwind', 'Gql'],
       range: '2021 - Jan 2022',
@@ -66,9 +69,9 @@ module.exports = {
       company: 'SureLock&Key',
       position: 'Developer',
       description:
-        'Aut sunt reprehenderitNon temporibus est reiciendis laudantium est explicabo' +
-        'nihil aut quasi omnis. Et aliquid quiaUt voluptate eos laboriosam aperiam' +
-        'eos harum maxime est dignissimos corrupti!',
+        'Working hard together with the development team to create efficient ' + 
+        'code for internal company projects. Creation of a CRM for improving company processes, ' + 
+        'development of flexible, optimized and improved SEO websites.',
       url: 'https://surelockkey.com/',
       skills: [
         'Vue',
