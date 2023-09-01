@@ -22,12 +22,12 @@ module.exports = [
     project: 'Event / Terras App',
     technologies: ['React', 'Leaflet Maps'],
     madeAt: 'Worth Internet Systems',
-    year: 2023
+    year: 2023,
   },
   {
     project: 'House Listing',
     description:
-      'Test application where you can see information about houses' + 
+      'Test application where you can see information about houses' +
       'for sale, post your ad and make changes to it.',
     url: 'https://github.com/hopeless-vov/house-listing',
     technologies: ['Vue', 'Scss', 'Vuex', 'Api'],
@@ -38,7 +38,7 @@ module.exports = [
   {
     project: 'Mail Sidebar Assignment',
     description:
-    'Small test application, like an email sidebar, just to learn something new.',
+      'Small test application, like an email sidebar, just to learn something new.',
     url: 'https://github.com/hopeless-vov/mail-sidebar-assignment',
     technologies: ['Vue 3', 'Tailwind', 'Json', 'Vite', 'Pinia'],
     imageName: 'mail.png',
@@ -66,8 +66,8 @@ module.exports = [
   {
     project: 'Sourcery',
     description:
-      'A reliable collaborative platform that makes running projects' + 
-      'in the lighting industry more effective, improves communication between' + 
+      'A reliable collaborative platform that makes running projects' +
+      'in the lighting industry more effective, improves communication between' +
       'team members, and helps with building strong and mutually beneficial partnerships.',
     url: 'https://www.gosourcery.com/',
     technologies: ['Vue', 'Scss', 'Tailwind', 'Gql'],

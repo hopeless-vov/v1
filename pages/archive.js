@@ -59,8 +59,9 @@ export default function Archive() {
         </TableHead>
         <tbody>
           {portfolio.map(
-            ({ project, year, madeAt, technologies, url }, index) => (
-              <TableRow key={index}>
+            ({ project, year, madeAt, technologies, url }, index) => {
+              const isGitLink = url?.includes('github')
+              return <TableRow key={index}>
                 <TableColumn>{year}</TableColumn>
                 <TableColumn>
                   <div className='text-base text-slate-200 font-semibold'>
@@ -81,10 +82,12 @@ export default function Archive() {
                   </ul>
                 </TableColumn>
                 <TableColumn className='hidden sm:table-cell'>
-                  <IconLink text={url} />
+                  {
+                    url && <IconLink url={url} text={isGitLink ? 'GitHub' : url} icon={isGitLink ? 'GitHub' : 'Arrow'}/>
+                  }
                 </TableColumn>
               </TableRow>
-            ),
+},
           )}
         </tbody>
       </Table>
