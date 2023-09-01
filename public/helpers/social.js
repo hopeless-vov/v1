@@ -2,19 +2,15 @@ module.exports = {
   socialMedia: [
     {
       name: 'GitHub',
-      url: '',
+      url: 'https://github.com/hopeless-vov',
     },
     {
       name: 'Instagram',
-      url: '',
-    },
-    {
-      name: 'Twitter',
-      url: '',
+      url: 'https://www.instagram.com/vov._bndrnk',
     },
     {
       name: 'Linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/vov-bndrnk',
     },
   ],
 };
