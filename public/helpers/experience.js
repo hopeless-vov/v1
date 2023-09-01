@@ -4,10 +4,10 @@ module.exports = {
       company: 'Worth Internet Systems',
       position: 'Software Engineer',
       description:
-      'Developing high-quality, reliable code for various types of projects for ' +
-      'our clients. Working with a client team to create a wind energy ' +
-      'project and create an app for public events. Active participation in the life ' +
-      'of the company, preparation for meetings, sharing experience with other developers.',
+        'Developing high-quality, reliable code for various types of projects for ' +
+        'our clients. Working with a client team to create a wind energy ' +
+        'project and create an app for public events. Active participation in the life ' +
+        'of the company, preparation for meetings, sharing experience with other developers.',
       url: 'https://www.worthsystems.com/',
       skills: [
         'Html',
@@ -49,7 +49,7 @@ module.exports = {
       position: 'Mentor',
       description:
         'Cooperation with students, conducting lectures for students,' +
-        'the purpose of which was to learn how to use the basic skills of ' + 
+        'the purpose of which was to learn how to use the basic skills of ' +
         'HTML, CSS, JS technologies. Homework check, help and feedback.',
       url: 'https://lviv.logos-academy.com/',
       skills: ['Htnl', 'Css', 'JavaScript'],
@@ -69,8 +69,8 @@ module.exports = {
       company: 'SureLock&Key',
       position: 'Developer',
       description:
-        'Working hard together with the development team to create efficient ' + 
-        'code for internal company projects. Creation of a CRM for improving company processes, ' + 
+        'Working hard together with the development team to create efficient ' +
+        'code for internal company projects. Creation of a CRM for improving company processes, ' +
         'development of flexible, optimized and improved SEO websites.',
       url: 'https://surelockkey.com/',
       skills: [

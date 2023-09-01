@@ -26,7 +26,7 @@ export default function Projects() {
                 className='order-1 sm:order-2'
               >
                 <Image
-                  src={require(`../../public/images/projects/${imageName}.png`)}
+                  src={require(`../../public/images/projects/${imageName}`)}
                   className='rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 order-2 sm:order-1 sm:col-span-2 sm:translate-y-1 mt-4 sm:mt-0'
                   width={200}
                   height={100}
