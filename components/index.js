@@ -10,4 +10,5 @@ export { default as Tag } from './tag';
 export { default as Card } from './card';
 export { default as Footer } from './footer';
 export { default as IconLink } from './iconLink';
+export { default as LavaLamp } from './lavaLamp';
 export * from './table';

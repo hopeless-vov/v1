@@ -1,6 +1,7 @@
 module.exports = {
   email: 'vov.bndrnk@gmail.com',
-  name: 'Volodymyr Bondarenko',
+  firstName: 'Volodymyr',
+  secondName: 'Bondarenko',
   position: 'Software Engineer',
   currentCompany: 'Worth Systems',
   motto:
